@@ -1,0 +1,19 @@
+.popup__button_avatar:disabled {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 18px;
+    }
+    .popup__button_avatar:disabled {
+    color: rgba(0, 0, 0, .2);
+    background-color: #fff;
+    font-size: 18px;
+    }
+    
+    .popup__button_avatar {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    }
