@@ -124,39 +124,3 @@ export default class Api {
 
 }
 
-//   // Экземпляр класса Api
-//   const api = new Api({
-//     baseUrl: 'http://95.216.175.5/cohort3',
-//     headers: { authorization, 
-//     'Content-Type': 'application/json; charset=UTF-8' }
-//   });
-
-//   // Отрисовка аватара, имени, должности
-//   loader.classList.add('popup_is-opened');
-//   api.getInfoAboutUser().then(profile => {
-//     Object.assign(profileOwner, profile)
-//   if(profile.name && profile.about) {
-//     document.querySelector('.user-info__photo')
-//   .style.backgroundImage = `url(${profile.avatar})`;
-//   document.querySelector('.user-info__name').textContent = profile.name;
-//   document.querySelector('.user-info__job').textContent = profile.about;
-// loader.classList.remove('popup_is-opened')
-//     } else {
-//       alert('Ошибка: данные не найдены!');
-//     }
-//   })
-  
-//   // Отрисовка и проверка карточек
-//   loader.classList.add('popup_is-opened');
-//   api.getInitialCards().then(cards => { 
-//     if(cards && cards.length > 0) { new CardList(placesList, cards)
-//   } else {
-//     alert('Ошибка: данные не найдены!')
-//   }
-//  loader.classList.remove('popup_is-opened');
-// })
-// .catch(err => {
-//   loader.classList.remove('popup_is-opened');
-//   alert('Ошибка: ' + err);
-// })
-

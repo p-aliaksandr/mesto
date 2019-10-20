@@ -29,8 +29,6 @@ export default class Card {
     }
     create() { // создаем карточку
 
-      //const cardOwner = Object.assign(profileOwner); // profile владельца для сравнения по id(корзина)
-
       const placeCard = document.createElement('div');
       const placeCardImage = document.createElement('div');
       const placeCardDeleteIcon = document.createElement('button');

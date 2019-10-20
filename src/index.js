@@ -2,7 +2,6 @@ import "./pages/index.css";
 import Api from './Api.js';
 import CardList from './CardList.js';
 import Popup from './Popup.js';
-// import Card from './Card.js';
 
 // ключ авторизации
 const authorization = '4422a986-6fc1-417b-86ac-e535571fd3cf';
@@ -33,9 +32,6 @@ const ERROR_LINK = 'Здесь должна быть ссылка';
 
 // Валидация мин. символов
 const MIN_LENGTH_INPUT = 2;
-
-// cardList для добавления карточек, функция newInfoPlus()
-// const cardList = new CardList(document.querySelector('.places-list'), []);
 
 // profile из api.getInfoAboutUser()
 const profileOwner = {};
@@ -275,7 +271,6 @@ function submitFormEdit(event) {
 const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort3' : 'https://praktikum.tk/cohort3';
 // Экземпляр класса Api
   const api = new Api({
-  // baseUrl: 'http://95.216.175.5/cohort3',
   baseUrl: serverUrl,
   headers: { authorization, 'Content-Type': 'application/json; charset=UTF-8' },
 });
