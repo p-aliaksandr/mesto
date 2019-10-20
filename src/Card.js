@@ -1,9 +1,14 @@
-class Card {
-    constructor(item) {
+import Popup from './Popup.js';
+import {api, loader} from './index.js';
+
+export default class Card {
+    constructor(item, profileOwner ) {
       this.remove = this.remove.bind(this);
       this.like = this.like.bind(this);
 
       this.cardParametrs = Object.assign(item);
+
+      this.cardOwner = Object.assign(profileOwner); // profile владельца для сравнения по id(корзина)
 
       this.link = item.link;
       this.name = item.name;
@@ -24,7 +29,7 @@ class Card {
     }
     create() { // создаем карточку
 
-      const cardOwner = profileOwner; // profile владельца для сравнения по id(корзина)
+      //const cardOwner = Object.assign(profileOwner); // profile владельца для сравнения по id(корзина)
 
       const placeCard = document.createElement('div');
       const placeCardImage = document.createElement('div');
@@ -45,7 +50,7 @@ class Card {
       placeCardLikeContainer.className = 'place-card__like-container';
       placeCardLikeCounter.className = 'place-card__like-counter';
 
-      placesList.appendChild(placeCard);
+      document.querySelector('.places-list').appendChild(placeCard);
       placeCard.appendChild(placeCardImage);
       placeCardImage.appendChild(placeCardDeleteIcon);
       placeCard.appendChild(placeCardDescription);
@@ -61,14 +66,14 @@ class Card {
       // Проверка по id(лайки), для сохранения наших лайков
       // после перезагрузки страницы 
       if (this.cardParametrs.likes.some(item => {
-          return item._id === cardOwner._id}))
+          return item._id === this.cardOwner._id}))
          { placeCard.querySelector('.place-card__like-icon')
           .classList.add('place-card__like-icon_liked');
       }
 
       // Проверка по id что карточка является нашей, если наша то
       // выводит корзину только на наших карточках
-      if (this.cardParametrs.owner._id === cardOwner._id) {
+      if (this.cardParametrs.owner._id === this.cardOwner._id) {
         placeCard
           .querySelector('.place-card__delete-icon')
           .classList.add('place-card__delete-icon_owner');

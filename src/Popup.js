@@ -1,4 +1,4 @@
-  class Popup {
+  export default class Popup {
     constructor(popupImg) {
       this.popup = document.querySelector(popupImg);
       this.open();
