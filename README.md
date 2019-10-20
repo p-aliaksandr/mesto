@@ -1,6 +1,6 @@
 # Interactive Page
 
-Сервис [Mesto](https://ablehope.github.io/mesto/) v0.0.2, где можно делиться фотографиями городов и других мест.
+Сервис [Mesto](https://ablehope.github.io/mesto/) v0.0.3, где можно делиться фотографиями городов и других мест.
 
 ### Стек: 
 - HTML/CSS(flexbox+grid)/BEM/Javascript(ES5/ES6)
