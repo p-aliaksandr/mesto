@@ -32,5 +32,5 @@
 Сборка продакшн версии:
 - `npm run build`
 
-Деплой билда на gh-pages:
+Развёртывание проекта на gh-pages:
 - `npm run deploy`
