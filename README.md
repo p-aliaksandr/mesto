@@ -20,17 +20,27 @@
 ## Установка проекта:
 Для установки необходимо наличие установленного nodejs и npm.
 Сохраните проект у себя на компьютере:
-- `git clone https://github.com/ablehope/mesto.git`
+```
+git clone https://github.com/ablehope/mesto.git
+```
 
 В корне проекта через консоль/терминал запустите команду:
-- `npm install`
+```
+npm install
+```
   
 #### После успешной установки станут доступны команды:
 Поднятие локального сервера с режимом разработки:
-- `npm run dev`
+```
+npm run dev
+```
 
 Сборка продакшн версии:
-- `npm run build`
+```
+npm run build
+```
 
 Развёртывание проекта на gh-pages:
-- `npm run deploy`
+```
+npm run deploy
+```
